@@ -3,16 +3,9 @@ import { ArrowRight } from 'lucide-react'
 
 const exampleMessages = [
   {
-    heading: "What's new with the iPad Pro?",
-    message: "What's new with the iPad Pro?"
-  },
-  {
-    heading: 'Why is Nvidia growing rapidly?',
-    message: 'Why is Nvidia growing rapidly?'
-  },
-  {
-    heading: 'How does the Vercel AI SDK work?',
-    message: 'How does the Vercel AI SDK work?'
+    heading: 'Nous gérons une crèmerie enregistrée, ...',
+    message:
+      "Nous gérons une crèmerie enregistrée, composée de deux associés. Nous sommes inscrits à la MAPAQ et avons un numéro de taxe. Actuellement, nous envisageons d'investir dans une nouvelle machine à crème glacée. Pouvez-vous nous informer sur les aides disponibles dans cette situation ?"
   },
   {
     heading: 'Tesla vs Rivian',
