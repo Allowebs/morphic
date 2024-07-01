@@ -1,10 +1,10 @@
 'use client'
 
-import { useState } from 'react'
-import { AvatarImage, Avatar, AvatarFallback } from '@/components/ui/avatar'
-import { CardContent, Card } from '@/components/ui/card'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
 import Link from 'next/link'
+import { useState } from 'react'
 
 export interface SearchResultsProps {
   results: { title: string; url: string; content: string }[]
@@ -18,8 +18,8 @@ export function SearchResults({ results }: SearchResultsProps) {
     setShowAllResults(true)
   }
 
-  const displayedResults = showAllResults ? results : results.slice(0, 3)
-  const additionalResultsCount = results.length > 3 ? results.length - 3 : 0
+  const displayedResults = showAllResults ? results : results.slice(0, 10)
+  const additionalResultsCount = results.length > 10 ? results.length - 10 : 0
 
   return (
     <div className="flex flex-wrap">
